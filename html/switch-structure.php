@@ -1,4 +1,4 @@
-<?php /* //9. The "Switch" structure. 
+<?php //9. The "Switch" structure. ?>
 
 
 <form method="get" action="">
@@ -8,7 +8,7 @@
 
 
 
-
+<?php
 $note = $_GET["note"];
 
 switch ($note) {
@@ -47,7 +47,7 @@ switch ($note) {
     default:
         echo "Give the note of the student";
     }
-*/ ?>
+ ?>
 
 
 
