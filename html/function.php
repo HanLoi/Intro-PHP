@@ -50,20 +50,67 @@ $blabla = "blalbla blalba blalbavblzg";
 print_r(initial($blabla));*/
 
 
-
-function replace($string){
-        $splitstr = explode("",$string);
-        $arr=[];
-        foreach($splitstr as $elem){
-            if ($elem == "a" && next($elem) == "e" ){
-                $elem[$i] = "æ";
-                unset(next($elem));
-                array_push($elem,$arr);
-            };
-        };
-        return implode("",$arr);
+/*function replace($str){
+    return str_replace("ae","æ",$str);
 };
 
-$word = "caecotrophie";
+echo (replace("caecotrophie"));*/
 
-echo (replace($word));
+
+
+
+/*function replace($str){
+    return str_replace("æ","ae",$str);
+};
+
+echo (replace("cæcotrophie"));*/
+
+
+
+/*function feedback($message, $css_class = "info"){
+    return "<div class=\"".$css_class."\">".$message."</div>";
+}
+
+echo feedback("Incorrect email address");*/
+
+
+/*function random_word_generator(){
+    $characters = 'abcdefghijklmnopqrstuvwxyz';
+    $arr1 =[];
+    $arr2=[];
+
+    $rand1= rand(1,5);
+    $rand2= rand(7,15);
+
+    for ($i=0; $i < $rand1; $i++) { 
+        array_push($arr1, $characters[rand(0,25)]);
+    }
+
+    for ($i=0; $i < $rand2; $i++) { 
+        array_push($arr2, $characters[rand(0,25)]);
+    }
+
+    return "<button>".implode("",$arr1)."</button><br><button>".implode("",$arr2)."</button>";
+    //. "</br><button>Generate</button>"; 
+}
+
+
+echo random_word_generator();*/
+
+
+
+
+/*function tolower($word){
+    return strtolower($word);
+}
+
+echo tolower("STOP YELLING I CAN'T HEAR MYSELF THINKING!!");*/
+
+
+/*function calculate_cone_volume($ray,$height){
+    $volume = $ray * $ray * 3.14 * $height * (1/3);  
+    return "The volume of a cone which ray is ".$ray." and height is ".$height." = " . $volume . ' cm<sup>3</sup><br />';  
+}
+
+echo calculate_cone_volume(5,4);*/
+
